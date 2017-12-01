@@ -17,5 +17,6 @@
     "dockerfile"
   ],
   "author": "knsakib@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": { "test": ">=0.6.0" }
 }
