@@ -1,5 +1,5 @@
 {
-  "name": "Node contineous integration demo",
+  "name": "sakib-dev-ops-demo",
   "version": "1.0.0",
   "description": "Jenkins contineous integration docker built demo",
   "main": "main.js",
@@ -18,5 +18,7 @@
   ],
   "author": "knsakib@gmail.com",
   "license": "MIT",
-  "devDependencies": { "test": ">=0.6.0" }
+  "devDependencies": {
+    "test": ">=0.6.0"
+  }
 }
