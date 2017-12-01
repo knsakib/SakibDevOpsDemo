@@ -4,6 +4,7 @@
   "description": "Jenkins contineous integration docker built demo",
   "main": "main.js",
   "scripts": {
+    "test": "node test.js",
     "start": "node main.js"
   },
   "repository": {

@@ -19,8 +19,7 @@ node {
     }
 
     stage('Test image') {
-        /* Ideally, we would run a test framework against our image.
-        */
+        /* Ideally, we would run a test framework against our image.*/
 
         app.inside {
             sh 'echo "Tests passed"'
