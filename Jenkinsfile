@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("sakib-dev-ops-demo")
+        app = sudo docker.build("sakib-dev-ops-demo")
     }
 
     stage('Test image') {
