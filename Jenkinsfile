@@ -14,9 +14,9 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("sakib-dev-ops-demo")
-
-        /*sh 'sudo docker build -t sakib-dev-ops-demo .'*/
+        app = docker.build(${imageTag})
+        /* sh("docker build -t ${imageTag} .") */
+        /* sh 'sudo docker build -t sakib-dev-ops-demo .'*/
 
 
     }
