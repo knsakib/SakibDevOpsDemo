@@ -1,5 +1,8 @@
 node {
     def app
+    def project = 'project-5135657072435335305'
+    def appName = 'sakib-dev-ops-demo'
+    def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
@@ -26,7 +29,7 @@ node {
         }
     }
 
-    /*stage('Push image') {  */
+    stage('Push image') {
         /* Finally, we'll push the image with two tags:
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
@@ -35,6 +38,7 @@ node {
         *  app.push("${env.BUILD_NUMBER}")
         *  app.push("latest")
 
-      *  }
-    } */
+        } */
+        sh("gcloud docker -- push ${imageTag}")
+    }
 }
